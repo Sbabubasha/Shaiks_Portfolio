@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAIK POETFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" onclick="toggleDarkMode(); return false;">
+
+                        <i  class='bx bxs-moon bx-flashing' ></i>
+                    </a></li>
+                    <i  id="hide" class='bx bx-x' onclick="closemenu()"></i>
+
+                </ul>
+                <i  id="hide" class='bx bx-menu' onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <h2>Hello, I'm </h2>
+                <h1>SHAIK BABUBASHA</h1>
+                <h3>And I'm  <span class="scrool"></span></h3>
+                <p>"Passionate Python developer with a Computer Science foundation. Skilled in web development, SQL, Django and REST APIs. 
+                    Strong problem solver, effective communicator, and eager to excel in collaborative projects."</p>
+                   <div class="social-icons">
+                    <a  href="https://wa.me/+919398999651"><i class='bx bxl-whatsapp' ></i></a>
+                    <!-- <a href=""><i class='bx bxl-instagram-alt' ></i></a> -->
+                    <a href="https://github.com/Sbabubasha"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/babubasha-s-81a65b1b4/"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+<!-- ------------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/babubasha.jpg" >
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I'm Shaik Babubasha, a dynamic Python developer proficient in Django and python. As a recent Computer Science graduate, I bring strong problem-solving skills and a passion for collaborative learning. My expertise spans Python, SQL, web technologies, and frameworks like Django.
+                         I'm committed to delivering excellence and eager to contribute to dynamic projects, all while continuing my growth in a collaborative environment."</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Technical skills')">Technical skills</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Professional skills</p>
+                            
+
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Bachelor Of Science(<span>MPCs</span>)</li>
+                                <li><span>2018</span><br>Intermediat(<span>MPC</span>)</li>
+                                <li><span>2016</span><br>SecondarySchool Certification</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Technical skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>SQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Basics of (<span>Flask </span>,<span> Rest API</span> And <span> Javascript</span>)</li>
+                            </ul>
+                        </div><div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Good Communication </li>
+                                <li>Probblem-Solving</li>
+                                <li>Collaborative</li>
+                                <li>Debugging </li>
+                                <li>Time-Management </li>
+                            </ul>
+                        </div>
+                         
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/webscrap.jpg" alt="">
+                    <div class="layer">
+                        <h3>webscrap</h3>
+                        <p>In Python using Beautiful soap  library  </p>
+                               <a href="https://github.com/Sbabubasha/Web_scrap_Assignment"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/django.png" alt="" >
+                    <div class="layer">
+                        <h3>User login &Registration forms</h3>
+                        <p>front-end forms using HTML and CSS for a user-friendly interface.user registration and login, handling SQL database interactions, and managing user authentication.</p>
+                        <a href="https://github.com/Sbabubasha/project_projectwork"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img  id="port" src="images/port.jpeg" alt="">
+                    <div class="layer">
+                        <h3>portfolio</h3>
+                        <p>I'm developing the my personal portfolio website</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Sbabubasha?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+<!-- -------------------------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bxs-envelope' ></i>sbabubasha4@gmail.com</p>
+                <p><i class='bx bxs-phone' ></i>+919398999651</p>
+                <div class="social-icons">
+                    <a  href="https://wa.me/+919398999651"><i class='bx bxl-whatsapp' ></i></a>
+                    <!-- <a href=""><i class='bx bxl-instagram-alt' ></i></a> -->
+                    <a href="https://github.com/Sbabubasha"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/babubasha-s-81a65b1b4/"><i class='bx bxl-linkedin' ></i></a>
+                    
+                </div>
+                <a href="images/Babubasha S.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @shaik made with<i class='bx bxs-heart'></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+<!-- <script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> -->
+</body>
+</html>
